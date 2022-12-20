@@ -2,7 +2,7 @@ package-lock.json
 phpmailer/
 # .gitignore
 src/
-dist
+dist/.gitkeep
 Source
 version.json
 undefined
