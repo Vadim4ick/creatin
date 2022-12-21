@@ -1,0 +1,68 @@
+// Заголовки, общие БЄМ блоки и проче...
+h2 {
+  @include adaptiveValue("font-size", 46, 25);
+  line-height: math.div(63, 46);
+  text-align: center;
+}
+
+.link-blue {
+  color: #4695f2;
+}
+
+.item-project .best-design {
+  background-image: url("./../img/best-design.svg");
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 107px;
+  position: absolute;
+  z-index: 5;
+  top: -2px;
+  right: 45px;
+
+  @media (max-width: $mobile) {
+    right: 30px;
+  }
+}
+
+.best-design {
+  @media (any-hover: hover) {
+    &:hover {
+      & .design-content {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.design-content {
+  width: 260px;
+  position: absolute;
+  top: -100%;
+  transform: translate(70%, 100%);
+  right: -48%;
+  background-color: white;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 115%;
+  color: #060606;
+  padding: 8px 8px;
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.design-content p {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("./../img/icons/arrow.svg");
+    width: 20px;
+    height: 17px;
+    position: absolute;
+    bottom: -20px;
+    left: 10px;
+  }
+}

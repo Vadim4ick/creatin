@@ -1,0 +1,40 @@
+//====================================================================================================
+.footer {
+  &__container {
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: rem(100);
+
+    @media (max-width: $mobile) {
+      min-height: rem(60);
+      justify-content: end;
+    }
+  }
+
+  &__info {
+    p {
+      @include adaptiveValue("font-size", 16, 13);
+      line-height: math.div(22, 16);
+      color: #46b4f2;
+    }
+  }
+
+  &__link {
+    display: flex;
+    @include adaptiveValue("gap", 115, 70, 1920, 768);
+    a {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+}
+
+//====================================================================================================

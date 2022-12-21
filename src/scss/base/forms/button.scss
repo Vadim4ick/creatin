@@ -1,0 +1,48 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.btn {
+  background: #060606;
+  border: 2px solid #46b4f2;
+  border-radius: 73px;
+  display: inline-flex;
+  align-items: center;
+  z-index: 2;
+  justify-content: center;
+  position: relative;
+
+  @media (any-hover: hover) {
+    &:hover {
+    }
+  }
+  &._fw {
+    width: 100%;
+  }
+}
+
+.button {
+  &::after {
+    content: "";
+    background: #46b4f2;
+    border: 2px solid #46b4f2;
+    z-index: 1;
+    border-radius: 73px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: all 0.3s ease 0s;
+
+    @media (max-width: $mobile) {
+      top: 3px;
+      left: 3px;
+    }
+  }
+}
+
+.button:active {
+  &::after {
+    content: "";
+    top: 0px;
+    left: 0px;
+  }
+}

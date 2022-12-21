@@ -1,7 +1,7 @@
-package-lock.json
+# package-lock.json
 phpmailer/
 # .gitignore
-src/
+# src/
 dist
 Source
 version.json
@@ -11,7 +11,7 @@ undefined
 node_modules/
 flsStartTemplate/
 README.txt
-gulpfile.js
-package.json
+# gulpfile.js
+# package.json
 snnipets.txt
-config
+# config
