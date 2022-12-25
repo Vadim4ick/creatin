@@ -17,14 +17,6 @@
   }
 }
 
-.wrapper._scroll .main-page {
-  padding-top: rem(96);
-
-  @media (max-width: $mobile) {
-    padding-top: rem(71);
-  }
-}
-
 //====================================================================================================
 .about-us {
   padding-top: rem(155);

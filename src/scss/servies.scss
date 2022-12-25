@@ -1,0 +1,310 @@
+.main-services {
+  padding-top: 50px;
+  @media (max-width: $mobile) {
+    padding-top: 5px;
+  }
+
+  &__container {
+    max-width: rem(1025);
+  }
+
+  &__content {
+    @media (min-width: $tablet) {
+      margin-top: -30px;
+    }
+    @media (max-width: $tablet) {
+      margin-left: 25px;
+    }
+    @media (max-width: $mobile) {
+      margin-top: 5px;
+      margin-left: 0;
+    }
+  }
+
+  &__body {
+    position: relative;
+
+    img {
+      max-width: 100%;
+    }
+
+    h1 {
+      font-weight: 500;
+      font-size: 84px;
+      line-height: math.div(115, 84);
+
+      @media (min-width: $mobile) {
+        position: absolute;
+        top: 50%;
+        left: 105px;
+        transform: translateY(-125%);
+      }
+      @media (max-width: $tablet) {
+        font-size: 75px;
+        left: 50px;
+      }
+
+      @media (max-width: $mobile) {
+        font-size: 66px;
+        margin-bottom: rem(10);
+      }
+    }
+
+    p {
+      font-size: 32px;
+      line-height: math.div(44, 32);
+      max-width: 714px;
+      position: relative;
+
+      @media (max-width: $tablet) {
+        font-size: 31px;
+      }
+
+      @media (max-width: $mobile) {
+        font-size: 18px;
+        max-width: rem(310);
+      }
+
+      span.line {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          background-repeat: no-repeat;
+
+          @media (min-width: $mobile) {
+            background-image: url("@img/design/line.svg");
+            width: 288px;
+            height: 13px;
+            bottom: -4px;
+            left: 0;
+          }
+
+          @media (max-width: $mobile) {
+            background-image: url("@img/design/mobile-line.svg");
+            width: 270px;
+            height: 28px;
+            bottom: 0px;
+            right: -45px;
+          }
+        }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+
+        @media (min-width: $mobile) {
+          background-image: url("@img/design/arrow.svg");
+          width: 490px;
+          height: 127px;
+          top: 45px;
+          left: -40px;
+        }
+
+        @media (max-width: $mobile) {
+          background-image: url("@img/design/mobile-arrow.svg");
+          width: 199px;
+          height: 61px;
+          top: 25px;
+          right: -5px;
+        }
+      }
+    }
+  }
+}
+
+.servies-our {
+  padding-top: 390px;
+  @media (max-width: $mobile) {
+    padding-top: 200px;
+  }
+  &__container {
+    max-width: rem(1025);
+  }
+
+  &__info {
+    padding-top: 310px;
+
+    @media (max-width: $mobile) {
+      padding-top: 300px;
+    }
+  }
+
+  &__text {
+    p {
+      font-size: 32px;
+      line-height: math.div(44, 32);
+      max-width: 610px;
+      margin-left: auto;
+
+      @media (max-width: $tablet) {
+        font-size: 31px;
+      }
+
+      @media (max-width: $mobile) {
+        font-size: 18px;
+        max-width: rem(310);
+      }
+    }
+  }
+
+  &__title {
+    @include adaptiveValue("margin-bottom", 28, 35);
+    p {
+      font-size: 16px;
+      line-height: math.div(22, 16);
+      color: #ff6895;
+      display: table;
+      position: relative;
+
+      &::before {
+        content: "";
+        background-repeat: no-repeat;
+        position: absolute;
+
+        @media (min-width: 1055px) {
+          background-image: url("@img/design/decor.svg");
+          width: 701px;
+          height: 532px;
+          top: -6px;
+          left: calc(-100% + 36px);
+          transform: translateY(-100%);
+        }
+        @media (max-width: 1055px) {
+          background-image: url("@img/design/decor-mobile.svg");
+          width: 385px;
+          height: 430px;
+          top: 0;
+          left: 45px;
+          transform: translate(-100%, -100%);
+        }
+      }
+
+      @media (max-width: 1055px) {
+        margin-left: auto;
+      }
+
+      @media (max-width: $mobile) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: rem(28) 0;
+    border-bottom: 2px solid #ff6895;
+
+    @media (max-width: $mobile) {
+      padding: rem(15) 0;
+    }
+
+    &:first-child {
+      border-top: 2px solid #ff6895;
+    }
+  }
+}
+
+.item-servies {
+  &__info {
+    display: flex;
+    align-items: center;
+    max-width: rem(600);
+    width: 100%;
+    justify-content: space-between;
+
+    p {
+      max-width: rem(400);
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 19px;
+
+      @media (max-width: $mobile) {
+        display: none;
+      }
+    }
+
+    h3 {
+      @include adaptiveValue("font-size", 24, 18);
+      line-height: math.div(33, 24);
+    }
+  }
+
+  &__btn {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background: #ff6895;
+      border: 2px solid #ff6895;
+
+      @media (max-width: $mobile) {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    a {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      position: relative;
+      align-items: center;
+      border: 2px solid #ff6895;
+      justify-content: center;
+      background-color: #fff;
+      border-radius: 50%;
+      z-index: 5;
+
+      @media (max-width: $mobile) {
+        width: 36px;
+        height: 36px;
+      }
+
+      &::before {
+        color: #ff6895;
+        font-size: rem(22);
+
+        @media (max-width: $mobile) {
+          font-size: rem(14.5);
+        }
+      }
+    }
+  }
+}
+//========================================================================================================================================================
+.our-works {
+  @include adaptiveValue("padding-top", 150, 120);
+  padding-bottom: rem(110);
+
+  &__wrapper {
+    max-width: rem(1240);
+    margin-left: auto;
+    padding: 0 rem(25);
+  }
+
+  &__swiper.swiper-wrapper {
+    @media (max-width: $mobile) {
+      align-items: center;
+      flex-direction: column;
+      gap: rem(20);
+    }
+  }
+
+  &__title {
+    @include adaptiveValue("margin-bottom", 28, 35);
+
+    p {
+      color: #ff6895;
+      @include adaptiveValue("font-size", 16, 14);
+      line-height: math.div(22, 16);
+    }
+  }
+}

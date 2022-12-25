@@ -66,3 +66,19 @@ h2 {
     left: 10px;
   }
 }
+
+.wrapper._scroll .page {
+  padding-top: rem(96);
+
+  @media (max-width: $mobile) {
+    padding-top: rem(71);
+  }
+}
+
+.main-services2__container {
+  padding: 0;
+}
+
+.our-works__slider.swiper {
+  overflow: inherit !important;
+}
