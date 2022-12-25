@@ -244,6 +244,7 @@
       height: 50px;
       background: #ff6895;
       border: 2px solid #ff6895;
+      border-radius: 50%;
 
       @media (max-width: $mobile) {
         width: 36px;

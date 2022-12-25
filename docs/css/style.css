@@ -150,7 +150,7 @@ h6 {
   background: #46b4f2;
   border: 2px solid #46b4f2;
   z-index: 1;
-  border-radius: 50%;
+  border-radius: 73px;
   position: absolute;
   top: 5px;
   left: 5px;
@@ -1183,6 +1183,7 @@ h2 {
   height: 50px;
   background: #ff6895;
   border: 2px solid #ff6895;
+  border-radius: 50%;
 }
 @media (max-width: 47.99875em) {
   .item-servies__btn::after {
