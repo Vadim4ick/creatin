@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Портфолио" })
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <a href="/" class="heder__logo">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="@img/logo-mobile.svg"
+                />
+                <source srcset="@img/logo.svg" />
+                <img src="@img/logo.svg" alt="" />
+              </picture>
+            </a>
+            <div class="header__menu menu">
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="design.html" class="menu__link">дизайн</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="business.html" class="menu__link">бизнес</a>
+                  </li>
+                  <li class="menu__item line">
+                    <a href="it.html" class="menu__link">it</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <button type="button" class="menu__icon icon-menu">
+              <span></span>
+            </button>
+            <div class="menu__info info-menu">
+              <nav class="info-menu__body">
+                <ul class="info-menu__list">
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="about-us.html" class="info-menu__link">о нас</a>
+                  </li>
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="servies.html" class="info-menu__link">услуги</a>
+                  </li>
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="portfolio.html" class="info-menu__link active"
+                      >портфолио</a
+                    >
+                  </li>
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="contacts.html" class="info-menu__link">контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="portfolio__main main-portfolio">
+          <div class="main-portfolio__container">
+            <div class="main-portfolio__body">
+              <p>портфолио</p>
+
+              <h2>
+                Нам есть <span class="line">чем гордиться,</span> ведь <br />
+                на счету нашей компании
+                <span class="arrow">десятки успешных</span> кейсов в самых
+                разных сферах.
+              </h2>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio__works works-portfolio">
+          <div class="works-portfolio__container">
+            <div class="works-portfolio__body">
+              <div data-tabs class="tabs">
+                <nav data-tabs-titles class="tabs__navigation">
+                  <div class="tabs__title _tab-active">
+                    <button type="button">дизайн</button>
+                  </div>
+                  <div class="tabs__title">
+                    <button type="button">it</button>
+                  </div>
+                </nav>
+                <div data-tabs-body class="tabs__content">
+                  <div class="tabs__body">
+                    <div class="our-project__body">
+                      <div class="our-project__item item-project">
+                        <img
+                          src="@img/project/buklik.png"
+                          srcset="@img/project/buklik-2x.png 2x"
+                          alt=""
+                        />
+
+                        <div class="item-project__info">
+                          <span>лого / брендинг</span>
+                          <p>Буклинк</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <img
+                          src="@img/project/marry.png"
+                          srcset="@img/project/marry-2x.png 2x"
+                          alt=""
+                        />
+
+                        <div class="item-project__info">
+                          <span>лого / брендинг</span>
+                          <p>MARRY</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <img
+                          src="./img/project/mosfulfilment2.png"
+                          srcset="@img/project/mosfulfilment2-2x.png 2x"
+                          alt=""
+                        />
+
+                        <div class="item-project__info">
+                          <span>лого / брендинг</span>
+                          <p>MosFulfilment</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <img
+                          src="@img/project/kus.png"
+                          srcset="@img/project/kus-2x.png 2x"
+                          alt=""
+                        />
+
+                        <div class="item-project__info">
+                          <span>лого</span>
+                          <p>КУСЬ</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <img
+                          src="@img/project/unity-arena.png"
+                          srcset="@img/project/unity-arena-2x.png 2x"
+                          alt=""
+                        />
+
+                        <div class="item-project__info">
+                          <span>лого / брендинг</span>
+                          <p>Unity Arena</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <img
+                          src="@img/project/fud-park.png"
+                          srcset="@img/project/fud-park-2x.png 2x"
+                          alt=""
+                        />
+
+                        <div class="item-project__info">
+                          <span>лого / брендинг</span>
+                          <p>Фуд Парк</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <a
+                          href="https://www.designrush.com/best-designs"
+                          target="_blank"
+                          class="best-design"
+                        >
+                          <div class="design-content">
+                            <p>
+                              Design Rush, известная своими best design awards,
+                              выбрала наш дизайн в число лучших примеров
+                              фармацевтического и медицинского брендинга»
+                            </p>
+                          </div>
+                        </a>
+                        <img
+                          src="@img/project/medsapp.png"
+                          srcset="@img/project/medsapp-2x.png 2x"
+                          alt=""
+                        />
+
+                        <div class="item-project__info">
+                          <span>лого / брендинг / it-разработка</span>
+                          <p>MEDSAPP</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <img
+                          src="@img/project/tab-tab.png"
+                          srcset="@img/project/tab-tab-2x.png 2x"
+                          alt=""
+                        />
+
+                        <div class="item-project__info">
+                          <span>лого / брендинг</span>
+                          <p>ТАБ-ТАБ</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <img
+                          src="@img/project/orbita.png"
+                          srcset="@img/project/orbita-2x.png 2x"
+                          alt=""
+                        />
+
+                        <div class="item-project__info">
+                          <span>лого / брендинг</span>
+                          <p>ORBITA DETAILING</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <img
+                          src="@img/project/chap.png"
+                          srcset="@img/project/chap-2x.png 2x"
+                          alt=""
+                        />
+
+                        <div class="item-project__info chap">
+                          <span>лого</span>
+                          <p>Чаплыгин А. В.</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <img
+                          src="@img/project/asta.png"
+                          srcset="@img/project/asta-2x.png 2x"
+                          alt=""
+                        />
+
+                        <div class="item-project__info">
+                          <span>лого / брендинг</span>
+                          <p>ASTA</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <img
+                          src="@img/project/toolbox.png"
+                          srcset="@img/project/toolbox-2x.png 2x"
+                          alt=""
+                        />
+
+                        <div class="item-project__info">
+                          <span>лого / брендинг / it-разработка</span>
+                          <p>TOOLBOX</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <img src="@img/project/mindal.svg" alt="" />
+
+                        <div class="item-project__info">
+                          <span>лого / брендинг / веб</span>
+                          <p>mindal</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <img src="@img/project/indip.svg" alt="" />
+
+                        <div class="item-project__info">
+                          <span>лого / брендинг / it-разработка</span>
+                          <p>INDIP</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <img
+                          src="@img/project/kans.png"
+                          srcset="@img/project/kans-2x.png 2x"
+                          alt=""
+                        />
+
+                        <div class="item-project__info">
+                          <span>лого / брендинг </span>
+                          <p>KANS</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabs__body it">
+                    <div class="our-project__body">
+                      <div class="our-project__item item-project">
+                        <img src="@img/project/medsapp.svg" alt="" />
+
+                        <div class="item-project__info">
+                          <span
+                            >разработка цифрового продукта и мобильного
+                            приложения</span
+                          >
+                          <p>MEDSAPP</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <img src="@img/project/toolbox.svg" alt="" />
+
+                        <div class="item-project__info">
+                          <span
+                            >разработка цифрового продукта и мобильного
+                            приложения</span
+                          >
+                          <p>TOOLBOX</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <img src="@img/project/indip.svg" alt="" />
+
+                        <div class="item-project__info">
+                          <span
+                            >разработка нейросети и мобильного приложения</span
+                          >
+                          <p>INDIP</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <img src="@img/project/stomapp.svg" alt="" />
+
+                        <div class="item-project__info">
+                          <span>разработка мобильного приложения</span>
+                          <p>StomApp</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <img src="@img/project/menuom.svg" alt="" />
+
+                        <div class="item-project__info">
+                          <span>разработка цифрового продукта</span>
+                          <p>MENUOM</p>
+                        </div>
+                      </div>
+                      <div class="our-project__item item-project">
+                        <img src="@img/project/imstom.svg" alt="" />
+
+                        <div class="item-project__info">
+                          <span
+                            >разработка цифрового продукта и мобильного
+                            приложения</span
+                          >
+                          <p>IMSTOM</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

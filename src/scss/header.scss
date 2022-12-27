@@ -13,6 +13,7 @@
     grid-template-columns: 185px 1fr 185px;
     min-height: 95px;
     align-items: center;
+    position: relative;
 
     @media (max-width: $mobile) {
       grid-template-columns: 128px 1fr 128px;
@@ -22,24 +23,50 @@
 }
 .menu {
   &__body {
+    @media (max-width: $mobile) {
+      position: fixed;
+      left: -150%;
+      top: 70px;
+      background-color: #060606;
+      width: 100%;
+      height: 100%;
+      padding: 35px 25px 80px 25px;
+      overflow: auto;
+      z-index: 5;
+      transition: all 0.3s ease 0s;
+    }
+
+    .menu-open & {
+      left: 0;
+    }
   }
 
   &__list {
-    display: flex;
-    column-gap: rem(40);
-
-    @media (max-width: $mobile) {
-      display: none;
+    @media (min-width: $mobile) {
+      display: flex;
+      column-gap: rem(40);
     }
   }
 
   &__item {
+    @media (max-width: $mobile) {
+      padding-bottom: rem(25);
+    }
   }
 
   &__link {
     font-weight: 300;
     line-height: math.div(22, 16);
     text-transform: lowercase;
+
+    &.active {
+      color: #46b4f2;
+    }
+
+    @media (max-width: $mobile) {
+      font-weight: 400;
+      font-size: 20px;
+    }
   }
 
   &__icon {
@@ -55,7 +82,62 @@
   background-color: #060606;
 }
 
+.info-menu {
+  position: absolute;
+  top: 62px;
+  right: 0;
+  background-color: #060606;
+  transition: all 0.3s ease 0s;
+  display: none;
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
+
+  .menu-open & {
+    display: block;
+  }
+  &__body {
+    padding: 0 0 10px 10px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: rem(5);
+  }
+
+  &__item {
+    @media (max-width: $mobile) {
+      padding-bottom: rem(25);
+    }
+  }
+
+  &__link {
+    font-size: rem(16);
+    line-height: math.div(22, 16);
+    text-transform: lowercase;
+
+    &.active {
+      color: #46b4f2;
+    }
+
+    @media (max-width: $mobile) {
+      font-weight: 400;
+      font-size: 20px;
+    }
+  }
+}
+
 //====================================================================================================
+
+.menu__item.line {
+  @media (max-width: $mobile) {
+    border-bottom: 1px solid #fff;
+    margin-bottom: rem(25);
+  }
+}
 
 //Burger
 .icon-menu {
@@ -77,6 +159,18 @@
     width: 100%;
     height: 2px;
     background-color: #fff;
+  }
+
+  .menu-open & {
+    @media (any-hover: hover) {
+      &:hover {
+        span,
+        &::before,
+        &::after {
+          background-color: #46b4f2;
+        }
+      }
+    }
   }
   &::before {
     top: 0px;

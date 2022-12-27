@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Услуги" })
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <a href="/" class="heder__logo">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="@img/logo-mobile.svg"
+                />
+                <source srcset="@img/logo.svg" />
+                <img src="@img/logo.svg" alt="" />
+              </picture>
+            </a>
+            <div class="header__menu menu">
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="design.html" class="menu__link">дизайн</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="business.html" class="menu__link">бизнес</a>
+                  </li>
+                  <li class="menu__item line">
+                    <a href="it.html" class="menu__link">it</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <button type="button" class="menu__icon icon-menu">
+              <span></span>
+            </button>
+            <div class="menu__info info-menu">
+              <nav class="info-menu__body">
+                <ul class="info-menu__list">
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="about-us.html" class="info-menu__link">о нас</a>
+                  </li>
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="servies.html" class="info-menu__link active"
+                      >услуги</a
+                    >
+                  </li>
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="portfolio.html" class="info-menu__link"
+                      >портфолио</a
+                    >
+                  </li>
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="contacts.html" class="info-menu__link">контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="servies__all all-servies">
+          <div class="all-servies__container">
+            <div class="all-servies__body">
+              <div class="all-servies__header">
+                <div class="all-servies__title">
+                  <p>услуги</p>
+                </div>
+                <div class="all-servies__text">
+                  <p>
+                    Наша команда оказывает весь спектр услуг, необходимых для
+                    выведения вашего бизнеса на принципиально новый уровень.
+                  </p>
+                </div>
+              </div>
+
+              <div class="all-servies__content">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    src="@img/servies/mobile-servies.png"
+                    srcset="@img/servies/mobile-servies-2x.png 2x"
+                  />
+                  <source
+                    src="@img/servies/servies.png"
+                    srcset="@img/servies/servies-2x.png 2x"
+                  />
+                  <img
+                    src="@img/servies/servies.png"
+                    srcset="@img/servies/servies-2x.png 2x"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+
+            <div class="all-servies__content content-servies">
+              <div class="content-servies__item">
+                <picture>
+                  <source
+                    media="(max-width:768px)"
+                    srcset="@img/servies/frame-mobile.svg"
+                  />
+                  <source src="@img/servies/frame.svg" />
+                  <img src="@img/servies/frame.svg" alt="" />
+                </picture>
+
+                <div class="content-servies__body">
+                  <h3>Дизайн</h3>
+                  <p>нейминг / лого / айдентика / веб / брендбук / упаковка</p>
+
+                  <div class="content-servies__btn button">
+                    <a href="" class="_icon-arrow-right"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="content-servies__item">
+                <picture>
+                  <source
+                    media="(max-width:768px)"
+                    srcset="@img/servies/frame-mobile.svg"
+                  />
+                  <source src="@img/servies/frame.svg" />
+                  <img src="@img/servies/frame.svg" alt="" />
+                </picture>
+
+                <div class="content-servies__body">
+                  <h3>Бизнес</h3>
+                  <p>консалтинг / аналитика / маркетинг / продвижение</p>
+
+                  <div class="content-servies__btn button">
+                    <a href="" class="_icon-arrow-right"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="content-servies__item">
+                <picture>
+                  <source
+                    media="(max-width:768px)"
+                    srcset="@img/servies/frame-mobile.svg"
+                  />
+                  <source src="@img/servies/frame.svg" />
+                  <img src="@img/servies/frame.svg" alt="" />
+                </picture>
+
+                <div class="content-servies__body">
+                  <h3>IT-разработка</h3>
+                  <p>
+                    мобильные приложения / нейросети / сопровождение / вывод на
+                    рынок
+                  </p>
+
+                  <div class="content-servies__btn button">
+                    <a href="" class="_icon-arrow-right"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    <!-- <script src="files/matter.min.js"></script>-->
+    <!--  <script src="files/two.min.js"></script> -->
+    <!-- <script></script> -->
+    @@include('html/_js.htm',{})
+  </body>
+</html>

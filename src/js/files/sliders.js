@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation } from "swiper";
+import Swiper, { Navigation, Autoplay } from "swiper";
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -83,27 +83,85 @@ function initSliders() {
       //     nextEl: ".about__more .more__item_next",
       //     prevEl: ".about__more .more__item_prev",
       //   },
+
+      breakpoints: {
+        // 320: {
+        // 	slidesPerView: 1,
+        // 	spaceBetween: 0,
+        // 	autoHeight: true,
+        // },
+        768: {
+          slidesPerView: 2.2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+        // 1268: {
+        //   slidesPerView: 3,
+        // },
+      },
+
+      on: {},
+    });
+  }
+
+  if (document.querySelector(".clients-about__slider")) {
+    new Swiper(".clients-about__slider", {
+      // Подключаем модули слайдера
+      // для конкретного случая
+      modules: [Navigation, Autoplay],
       /*
-			breakpoints: {
-				320: {
-					slidesPerView: 1,
-					spaceBetween: 0,
-					autoHeight: true,
-				},
-				768: {
-					slidesPerView: 2,
-					spaceBetween: 20,
-				},
-				992: {
-					slidesPerView: 3,
-					spaceBetween: 20,
-				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
-				},
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
 			},
 			*/
+      observer: true,
+      observeParents: true,
+      slidesPerView: "auto",
+      spaceBetween: 60,
+      loop: true,
+      allowTouchMove: false,
+      autoplay: {
+        delay: 0,
+        reverseDirection: true,
+      },
+
+      speed: 1800,
+      //touchRatio: 0,
+      //simulateTouch: false,
+      //loop: true,
+      //preloadImages: false,
+      //lazy: true,
+      // Dotts
+      //pagination: {
+      //	el: '.slider-quality__pagging',
+      //	clickable: true,
+      //},
+      // Arrows
+      //   navigation: {
+      //     nextEl: ".about__more .more__item_next",
+      //     prevEl: ".about__more .more__item_prev",
+      //   },
+
+      // breakpoints: {
+      // 320: {
+      // 	slidesPerView: 1,
+      // 	spaceBetween: 0,
+      // 	autoHeight: true,
+      // },
+      // 768: {
+      //   slidesPerView: 2.2,
+      // },
+      // 992: {
+      //   slidesPerView: 3,
+      // },
+      // 1268: {
+      //   slidesPerView: 3,
+      // },
+      // },
+
       on: {},
     });
   }

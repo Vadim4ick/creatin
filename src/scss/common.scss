@@ -6,7 +6,7 @@ h2 {
 }
 
 .link-blue {
-  color: #4695f2;
+  color: #46b4f2;
 }
 
 .item-project .best-design {
@@ -81,4 +81,259 @@ h2 {
 
 .our-works__slider.swiper {
   overflow: inherit !important;
+}
+
+.disign.main-services__body {
+  p {
+    span.line {
+      &::before {
+        @media (min-width: $mobile) {
+          background-image: url("@img/design/line.svg");
+        }
+        @media (max-width: $mobile) {
+          background-image: url("@img/design/mobile-line.svg");
+        }
+      }
+    }
+
+    &::before {
+      @media (min-width: $mobile) {
+        background-image: url("@img/design/arrow.svg");
+      }
+      @media (max-width: $mobile) {
+        background-image: url("@img/design/mobile-arrow.svg");
+      }
+    }
+  }
+}
+.servies-our__body.design {
+  .servies-our__title {
+    p {
+      color: #ff6895;
+
+      &::before {
+        @media (min-width: 1055px) {
+          background-image: url("@img/design/decor.svg");
+        }
+        @media (max-width: 1055px) {
+          background-image: url("@img/design/decor-mobile.svg");
+        }
+      }
+    }
+  }
+  .servies-our__item {
+    border-bottom: 2px solid #ff6895;
+
+    &:first-child {
+      border-top: 2px solid #ff6895;
+    }
+  }
+}
+.servies-our__content.design {
+  .item-servies__info {
+    max-width: rem(600);
+  }
+
+  .item-servies__btn {
+    &::after {
+      background: #ff6895;
+      border: 2px solid #ff6895;
+    }
+
+    a {
+      border: 2px solid #ff6895;
+
+      &::before {
+        color: #ff6895;
+      }
+    }
+  }
+}
+.our-works__body.design {
+  .our-works__title {
+    p {
+      color: #ff6895;
+    }
+  }
+}
+
+.business.main-services__body {
+  p {
+    span.line {
+      &::before {
+        @media (min-width: $mobile) {
+          background-image: url("@img/business/line.svg");
+        }
+        @media (max-width: $mobile) {
+          background-image: url("@img/business/mobile-line.svg");
+        }
+      }
+    }
+
+    &::before {
+      @media (min-width: $mobile) {
+        background-image: url("@img/business/arrow.svg");
+      }
+      @media (max-width: $mobile) {
+        background-image: url("@img/business/mobile-arrow.svg");
+      }
+    }
+  }
+}
+.servies-our__body.business {
+  .servies-our__title {
+    p {
+      color: #b87fff;
+      &::before {
+        @media (min-width: 1055px) {
+          background-image: url("@img/business/decor.svg");
+        }
+        @media (max-width: 1055px) {
+          background-image: url("@img/business/decor-mobile.svg");
+        }
+      }
+    }
+  }
+  .servies-our__item {
+    border-bottom: 2px solid #b87fff;
+
+    &:first-child {
+      border-top: 2px solid #b87fff;
+    }
+  }
+}
+.servies-our__content.business {
+  .item-servies__info {
+    max-width: rem(610);
+  }
+  .item-servies__btn {
+    &::after {
+      background: #b87fff;
+      border: 2px solid #b87fff;
+    }
+
+    a {
+      border: 2px solid #b87fff;
+
+      &::before {
+        color: #b87fff;
+      }
+    }
+  }
+}
+.our-works__body.business {
+  .our-works__title {
+    p {
+      color: #b87fff;
+    }
+  }
+}
+
+.it.main-services__body {
+  p {
+    span.line {
+      &::before {
+        @media (min-width: $mobile) {
+          background-image: url("@img/it/line.svg");
+        }
+        @media (max-width: $mobile) {
+          background-image: url("@img/it/mobile-line.svg");
+        }
+      }
+    }
+
+    &::before {
+      @media (min-width: $mobile) {
+        background-image: url("@img/it/arrow.svg");
+      }
+      @media (max-width: $mobile) {
+        background-image: url("@img/it/mobile-arrow.svg");
+      }
+    }
+  }
+}
+.servies-our__body.it {
+  .servies-our__title {
+    p {
+      color: #46b4f2;
+      &::before {
+        @media (min-width: 1055px) {
+          background-image: url("@img/it/decor.svg");
+        }
+        @media (max-width: 1055px) {
+          background-image: url("@img/it/decor-mobile.svg");
+        }
+      }
+    }
+  }
+  .servies-our__item {
+    border-bottom: 2px solid #46b4f2;
+
+    &:first-child {
+      border-top: 2px solid #46b4f2;
+    }
+  }
+}
+.servies-our__content.it {
+  .item-servies__info {
+    max-width: rem(810);
+  }
+  .item-servies__btn {
+    &::after {
+      background: #46b4f2;
+      border: 2px solid #46b4f2;
+    }
+
+    a {
+      border: 2px solid #46b4f2;
+
+      &::before {
+        color: #46b4f2;
+      }
+    }
+  }
+}
+.our-works__body.it {
+  .our-works__title {
+    p {
+      color: #46b4f2;
+    }
+  }
+
+  .our-works__slide .our-project__item.item-project .item-project__info {
+    max-width: rem(250);
+  }
+}
+
+#contacts .connection-form {
+  @media (min-width: $mobile) {
+    padding-top: rem(160);
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: rem(85);
+  }
+
+  .connection-form__title {
+    margin-bottom: rem(200);
+
+    @media (max-width: $mobile) {
+      margin-bottom: rem(75);
+    }
+  }
+}
+
+#contacts .block-links {
+  margin-bottom: rem(185);
+
+  @media (max-width: $mobile) {
+    margin-bottom: rem(70);
+  }
+}
+
+#design .menu__link.active {
+  color: #ff6895;
+}
+#business .menu__link.active {
+  color: #b87fff;
 }

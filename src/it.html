@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"ИТ-Разработка" })
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <a href="/" class="heder__logo">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="@img/logo-mobile.svg"
+                />
+                <source srcset="@img/logo.svg" />
+                <img src="@img/logo.svg" alt="" />
+              </picture>
+            </a>
+            <div class="header__menu menu">
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="design.html" class="menu__link">дизайн</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="business.html" class="menu__link">бизнес</a>
+                  </li>
+                  <li class="menu__item line">
+                    <a href="it.html" class="menu__link active">it</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <button type="button" class="menu__icon icon-menu">
+              <span></span>
+            </button>
+            <div class="menu__info info-menu">
+              <nav class="info-menu__body">
+                <ul class="info-menu__list">
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="about-us.html" class="info-menu__link">о нас</a>
+                  </li>
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="servies.html" class="info-menu__link">услуги</a>
+                  </li>
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="portfolio.html" class="info-menu__link"
+                      >портфолио</a
+                    >
+                  </li>
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="contacts.html" class="info-menu__link">контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="services__main main-services">
+          <div class="main-services2__container">
+            <div class="main-services__body it">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="@img/it/mobile-phone.svg"
+                />
+                <source srcset="@img/it/phone.svg" />
+                <img src="@img/it/phone.svg" alt="" />
+              </picture>
+
+              <div class="main-services__content">
+                <div class="main-services__container">
+                  <h1>Бизнес</h1>
+
+                  <p>
+                    Наша команда оказывает
+                    <span class="line">весь спектр услуг</span>, необходимых для
+                    выведения вашего бизнеса на принципиально новый уровень.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="our-servies servies-our">
+          <div class="servies-our__container">
+            <div class="servies-our__body it">
+              <div class="servies-our__text">
+                <p>
+                  Мы проходим весь путь разработки актуальной дизайн-концепции:
+                  <br />
+                  от детального анализа вашего бизнеса до визуализации проекта.
+                </p>
+              </div>
+
+              <div class="servies-our__info">
+                <div class="servies-our__title">
+                  <p>наши услуги</p>
+                </div>
+
+                <div class="servies-our__content it">
+                  <div class="servies-our__item item-servies">
+                    <div class="item-servies__info">
+                      <h3>разработка мобильных приложений</h3>
+                      <p>
+                        Разрабатываем любые мобильные приложения для самых
+                        популярных мобильных платформ.
+                      </p>
+                    </div>
+
+                    <div class="item-servies__btn button">
+                      <a href="#!" class="_icon-arrow-right"></a>
+                    </div>
+                  </div>
+                  <div class="servies-our__item item-servies">
+                    <div class="item-servies__info">
+                      <h3>
+                        разработка цифоровых <br />
+                        продуктов
+                      </h3>
+                      <p>
+                        Предоставим полный цикл разработки ПО с использованием
+                        инновационных технологий и индивидуальных
+                        бизнес-решений.
+                      </p>
+                    </div>
+
+                    <div class="item-servies__btn button">
+                      <a href="#!" class="_icon-arrow-right"></a>
+                    </div>
+                  </div>
+                  <div class="servies-our__item item-servies">
+                    <div class="item-servies__info">
+                      <h3>разработка нейросетей</h3>
+                      <p>
+                        Разработка и внедрение нейронных сетей под ваш
+                        индивидальный запрос.
+                      </p>
+                    </div>
+
+                    <div class="item-servies__btn button">
+                      <a href="#!" class="_icon-arrow-right"></a>
+                    </div>
+                  </div>
+                  <div class="servies-our__item item-servies">
+                    <div class="item-servies__info">
+                      <h3>вывод IT-продуктов на рынок</h3>
+                      <p>
+                        Осуществляем комплексный маркетинг, позиционирование
+                        продвижение.
+                      </p>
+                    </div>
+
+                    <div class="item-servies__btn button">
+                      <a href="#!" class="_icon-arrow-right"></a>
+                    </div>
+                  </div>
+                  <div class="servies-our__item item-servies">
+                    <div class="item-servies__info">
+                      <h3>
+                        формирование <br />
+                        технического задания
+                      </h3>
+                      <p>
+                        Сформируем грамотное техническое задание, которое
+                        отобразит цель всего проекта даст полное понимание всей
+                        сути поставленной задачи.
+                      </p>
+                    </div>
+
+                    <div class="item-servies__btn button">
+                      <a href="#!" class="_icon-arrow-right"></a>
+                    </div>
+                  </div>
+                  <div class="servies-our__item item-servies">
+                    <div class="item-servies__info">
+                      <h3>
+                        Сопровождение <br />
+                        цифровых продуктов
+                      </h3>
+                      <p>
+                        Поддерживаем и улучшаем продукт на основе обратной
+                        связи.
+                      </p>
+                    </div>
+
+                    <div class="item-servies__btn button">
+                      <a href="#!" class="_icon-arrow-right"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="our-works">
+          <div class="our-works__wrapper">
+            <div class="our-works__body it">
+              <div class="our-works__title">
+                <p>наши работы</p>
+              </div>
+
+              <div class="our-works__slider">
+                <div class="our-works__swiper">
+                  <div class="our-works__slide">
+                    <div class="our-project__item item-project">
+                      <img src="@img/project/medsapp.svg" alt="" />
+
+                      <div class="item-project__info">
+                        <span
+                          >разработка цифрового продукта и мобильного
+                          приложения</span
+                        >
+                        <p>MEDSAPP</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-project__item item-project">
+                      <img src="@img/project/toolbox.svg" alt="" />
+
+                      <div class="item-project__info">
+                        <span
+                          >разработка цифрового продукта и мобильного
+                          приложения</span
+                        >
+                        <p>TOOLBOX</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-project__item item-project">
+                      <img src="@img/project/indip.svg" alt="" />
+
+                      <div class="item-project__info">
+                        <span
+                          >разработка нейросети и мобильного приложения</span
+                        >
+                        <p>INDIP</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-project__item item-project">
+                      <img src="@img/project/stomapp.svg" alt="" />
+
+                      <div class="item-project__info">
+                        <span>разработка мобильного приложения</span>
+                        <p>StomApp</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-project__item item-project">
+                      <img src="@img/project/menuom.svg" alt="" />
+
+                      <div class="item-project__info">
+                        <span>разработка цифрового продукта</span>
+                        <p>MENUOM</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="our-works__slide">
+                    <div class="our-project__item item-project">
+                      <img src="@img/project/imstom.svg" alt="" />
+
+                      <div class="item-project__info">
+                        <span
+                          >разработка цифрового продукта и мобильного
+                          приложения</span
+                        >
+                        <p>IMSTOM</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

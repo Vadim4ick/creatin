@@ -74,7 +74,6 @@
           background-repeat: no-repeat;
 
           @media (min-width: $mobile) {
-            background-image: url("@img/design/line.svg");
             width: 288px;
             height: 13px;
             bottom: -4px;
@@ -82,7 +81,6 @@
           }
 
           @media (max-width: $mobile) {
-            background-image: url("@img/design/mobile-line.svg");
             width: 270px;
             height: 28px;
             bottom: 0px;
@@ -97,7 +95,6 @@
         background-repeat: no-repeat;
 
         @media (min-width: $mobile) {
-          background-image: url("@img/design/arrow.svg");
           width: 490px;
           height: 127px;
           top: 45px;
@@ -105,7 +102,6 @@
         }
 
         @media (max-width: $mobile) {
-          background-image: url("@img/design/mobile-arrow.svg");
           width: 199px;
           height: 61px;
           top: 25px;
@@ -156,7 +152,6 @@
     p {
       font-size: 16px;
       line-height: math.div(22, 16);
-      color: #ff6895;
       display: table;
       position: relative;
 
@@ -166,15 +161,13 @@
         position: absolute;
 
         @media (min-width: 1055px) {
-          background-image: url("@img/design/decor.svg");
           width: 701px;
           height: 532px;
           top: -6px;
-          left: calc(-100% + 36px);
+          left: calc(-100% + 33px);
           transform: translateY(-100%);
         }
         @media (max-width: 1055px) {
-          background-image: url("@img/design/decor-mobile.svg");
           width: 385px;
           height: 430px;
           top: 0;
@@ -196,16 +189,12 @@
   &__item {
     display: flex;
     align-items: center;
+    gap: rem(5);
     justify-content: space-between;
     padding: rem(28) 0;
-    border-bottom: 2px solid #ff6895;
 
     @media (max-width: $mobile) {
       padding: rem(15) 0;
-    }
-
-    &:first-child {
-      border-top: 2px solid #ff6895;
     }
   }
 }
@@ -214,8 +203,8 @@
   &__info {
     display: flex;
     align-items: center;
-    max-width: rem(600);
     width: 100%;
+    gap: rem(5);
     justify-content: space-between;
 
     p {
@@ -232,6 +221,12 @@
     h3 {
       @include adaptiveValue("font-size", 24, 18);
       line-height: math.div(33, 24);
+
+      @media (max-width: $mobile) {
+        br {
+          display: none;
+        }
+      }
     }
   }
 
@@ -242,8 +237,6 @@
       content: "";
       width: 50px;
       height: 50px;
-      background: #ff6895;
-      border: 2px solid #ff6895;
       border-radius: 50%;
 
       @media (max-width: $mobile) {
@@ -258,7 +251,6 @@
       display: flex;
       position: relative;
       align-items: center;
-      border: 2px solid #ff6895;
       justify-content: center;
       background-color: #fff;
       border-radius: 50%;
@@ -270,7 +262,6 @@
       }
 
       &::before {
-        color: #ff6895;
         font-size: rem(22);
 
         @media (max-width: $mobile) {
@@ -288,7 +279,14 @@
   &__wrapper {
     max-width: rem(1240);
     margin-left: auto;
-    padding: 0 rem(25);
+    @media (max-width: $pc) {
+      padding: 0 rem(25);
+    }
+  }
+  &__slide .our-project__item.item-project .item-project__info {
+    p {
+      text-transform: none;
+    }
   }
 
   &__swiper.swiper-wrapper {
@@ -303,7 +301,6 @@
     @include adaptiveValue("margin-bottom", 28, 35);
 
     p {
-      color: #ff6895;
       @include adaptiveValue("font-size", 16, 14);
       line-height: math.div(22, 16);
     }

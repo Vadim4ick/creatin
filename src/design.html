@@ -3,7 +3,60 @@
   @@include('html/_head.htm',{ "title":"Дизайн" })
   <body>
     <div class="wrapper">
-      @@include('html/_header.htm',{})
+      <header id="design" class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <a href="/" class="heder__logo">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="@img/design/logo-mobile.svg"
+                />
+                <source srcset="@img/design/logo2.svg" />
+                <img src="@img/design/logo2.svg" alt="" />
+              </picture>
+            </a>
+            <div class="header__menu menu">
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="design.html" class="menu__link active">дизайн</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="business.html" class="menu__link">бизнес</a>
+                  </li>
+                  <li class="menu__item line">
+                    <a href="it.html" class="menu__link">it</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <button type="button" class="menu__icon icon-menu">
+              <span></span>
+            </button>
+            <div class="menu__info info-menu">
+              <nav class="info-menu__body">
+                <ul class="info-menu__list">
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="about-us.html" class="info-menu__link">о нас</a>
+                  </li>
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="servies.html" class="info-menu__link">услуги</a>
+                  </li>
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="portfolio.html" class="info-menu__link"
+                      >портфолио</a
+                    >
+                  </li>
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="contacts.html" class="info-menu__link">контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
       <main class="page">
         <section class="services__main main-services">
           <div class="main-services2__container">
@@ -133,7 +186,7 @@
         </section>
         <section class="our-works">
           <div class="our-works__wrapper">
-            <div class="our-works__body">
+            <div class="our-works__body design">
               <div class="our-works__title">
                 <p>наши работы</p>
               </div>
