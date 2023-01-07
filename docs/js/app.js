@@ -11223,8 +11223,8 @@
     if (
       (ge &&
         (window.matchMedia("(min-width: 500px)").matches
-          ? (ge.style.backgroundImage = `url(./../img/projects/${ge.classList[0]}/logo.png)`)
-          : (ge.style.backgroundImage = `url(./../img/projects/${ge.classList[0]}/mobile-logo-2x.png)`)),
+          ? (ge.style.backgroundImage = `url(./img/projects/${ge.classList[0]}/logo.png)`)
+          : (ge.style.backgroundImage = `url(./img/projects/${ge.classList[0]}/mobile-logo-2x.png)`)),
       document.querySelector("#header-black-scroll"))
     ) {
       var ye = new IntersectionObserver(

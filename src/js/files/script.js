@@ -7,9 +7,9 @@ const img = document.querySelector(".main-projects");
 
 if (img) {
   if (window.matchMedia("(min-width: 500px)").matches) {
-    img.style.backgroundImage = `url(./../img/projects/${img.classList[0]}/logo.png)`;
+    img.style.backgroundImage = `url(./img/projects/${img.classList[0]}/logo.png)`;
   } else {
-    img.style.backgroundImage = `url(./../img/projects/${img.classList[0]}/mobile-logo-2x.png)`;
+    img.style.backgroundImage = `url(./img/projects/${img.classList[0]}/mobile-logo-2x.png)`;
   }
 }
 
