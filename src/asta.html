@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Asta" })
+  <body>
+    <div class="wrapper">
+      <header id="header-black-scroll" class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <a href="/" class="heder__logo">
+              <!-- <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="@img/projects/logo-mobile.svg"
+                />
+                <source srcset="@img/projects/logo.svg" />
+                <img src="@img/projects/logo.svg" alt="" />
+              </picture> -->
+            </a>
+            <div class="header__menu menu">
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="design.html" class="menu__link">дизайн</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="business.html" class="menu__link">бизнес</a>
+                  </li>
+                  <li class="menu__item line">
+                    <a href="it.html" class="menu__link">it</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <button type="button" class="menu__icon icon-menu">
+              <span></span>
+            </button>
+            <div class="menu__info info-menu">
+              <nav class="info-menu__body">
+                <ul class="info-menu__list">
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="about-us.html" class="info-menu__link">о нас</a>
+                  </li>
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="servies.html" class="info-menu__link">услуги</a>
+                  </li>
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="portfolio.html" class="info-menu__link"
+                      >портфолио</a
+                    >
+                  </li>
+                  <li data-da=".menu__list, 767.98" class="info-menu__item">
+                    <a href="contacts.html" class="info-menu__link">контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="asta projects__main main-projects"></section>
+        <section class="projects-info">
+          <div class="projects-info__container">
+            <div class="projects-info__body">
+              <div class="projects-info__header">
+                <h2>asta</h2>
+
+                <div class="text">
+                  <p>Разработка фирменного стиля</p>
+                  <p>для архитектурного бюро</p>
+                </div>
+              </div>
+
+              <div class="projects-info__info">
+                <div class="projects-info__block">
+                  <span>решение</span>
+                  <p>
+                    Упор при разработке делался на название, поскольку оно
+                    позволит выделиться среди конкурентов и упростить визуальную
+                    составляющую, сделав акцент на шрифтовых сочетаниях.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="projects-gallery">
+          <div class="projects-gallery__container">
+            <div class="projects-gallery__body">
+              <div class="projects-gallery__image-ibg">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    src="@img/projects/asta/mobile/1.png"
+                    srcset="@img/projects/asta/mobile/1-2x.png 2x"
+                  />
+                  <source
+                    src="@img/projects/asta/1.png"
+                    srcset="@img/projects/asta/1-2x.png 2x"
+                  />
+                  <img
+                    src="@img/projects/asta/1.png"
+                    srcset="@img/projects/asta/1-2x.png 2x"
+                    alt=""
+                  />
+                </picture>
+              </div>
+              <div class="projects-gallery__image-ibg">
+                <img
+                  src="@img/projects/asta/2.png"
+                  srcset="@img/projects/asta/2-2x.png 2x"
+                  alt=""
+                />
+              </div>
+              <div class="projects-gallery__image-ibg">
+                <img
+                  src="@img/projects/asta/3.png"
+                  srcset="@img/projects/asta/3-2x.png 2x"
+                  alt=""
+                />
+              </div>
+              <div class="projects-gallery__image-ibg">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    src="@img/projects/asta/mobile/4.png"
+                    srcset="@img/projects/asta/mobile/4-2x.png 2x"
+                  />
+                  <source
+                    src="@img/projects/asta/4.png"
+                    srcset="@img/projects/asta/4-2x.png 2x"
+                  />
+                  <img
+                    src="@img/projects/asta/4.png"
+                    srcset="@img/projects/asta/4-2x.png 2x"
+                    alt=""
+                  />
+                </picture>
+              </div>
+              <div class="projects-gallery__image-ibg">
+                <img
+                  src="@img/projects/asta/5.png"
+                  srcset="@img/projects/asta/5-2x.png 2x"
+                  alt=""
+                />
+              </div>
+              <div class="projects-gallery__image-ibg">
+                <img
+                  src="@img/projects/asta/6.png"
+                  srcset="@img/projects/asta/6-2x.png 2x"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="projects-links">
+          <div class="projects-links__container">
+            <div class="projects-links__body">
+              <a href="#!">следующий проект</a>
+              <a href="#!">все проекты</a>
+              <a href="#!">заказать</a>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

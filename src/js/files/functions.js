@@ -490,7 +490,38 @@ export function menuInit() {
   if (iconMenu) {
     iconMenu.addEventListener("click", function (e) {
       if (bodyLockStatus) {
-        bodyLockToggle();
+        if (window.matchMedia("(max-width: 768px)").matches) {
+          bodyLockToggle();
+
+          console.log(document.documentElement.classList.contains("menu-open"));
+
+          if (
+            !document.documentElement.classList.contains("menu-open") &&
+            document.querySelector("header.black")
+          ) {
+            document.querySelector(".heder__logo").innerHTML = `  <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./img/projects/logo-mobile.svg"
+            />
+            <source srcset="./img/projects/logo.svg" />
+            <img src="./img/projects/logo.svg" alt="" />
+          </picture>`;
+          }
+          if (
+            document.documentElement.classList.contains("menu-open") &&
+            document.querySelector("header.black")
+          ) {
+            document.querySelector(".heder__logo").innerHTML = `  <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./img/projects/logo-mobile-black.svg"
+            />
+            <source srcset="./img/projects/logo-black.svg" />
+            <img src="./img/projects/logo-black.svg" alt="" />
+          </picture>`;
+          }
+        }
         document.documentElement.classList.toggle("menu-open");
       }
     });

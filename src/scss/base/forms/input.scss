@@ -13,12 +13,13 @@ textarea {
   width: 100%;
   display: block;
   padding: 10px 0px;
-  border: none;
+  // border: none;
   outline: none;
   color: white;
-  border-bottom: 2px solid #4695f2;
+  border-bottom: 2px solid #46b4f2;
   @include adaptiveValue("font-size", 24, 16);
   line-height: math.div(33, 24);
+  position: relative;
 
   @media (max-width: $mobile) {
     padding: 5px 0px;
@@ -27,14 +28,27 @@ textarea {
   &._focus {
   }
   &._form-error {
-    border-color: red;
-
     &::placeholder {
-      color: red;
+      color: #9b1e1e;
     }
+    border-color: #9b1e1e;
   }
 }
 
 .input::placeholder {
   color: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #060606 inset;
+  transition: background-color 5000s ease-in-out 0s;
 }

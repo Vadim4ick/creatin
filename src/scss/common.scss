@@ -7,6 +7,15 @@ h2 {
 
 .link-blue {
   color: #46b4f2;
+  transition: all 0.3s ease 0s;
+}
+
+.block-links__body .link-blue {
+  @media (any-hover: hover) {
+    &:hover {
+      color: white;
+    }
+  }
 }
 
 .item-project .best-design {
@@ -336,4 +345,19 @@ h2 {
 }
 #business .menu__link.active {
   color: #b87fff;
+}
+
+.about.our-works__wrapper {
+  max-width: rem(1240);
+}
+
+.our-works__swiper.swiper-wrapper {
+  @media (max-width: $mobile) {
+    display: grid !important;
+  }
+}
+.main-services__body.it .it-text {
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }

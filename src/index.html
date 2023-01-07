@@ -15,19 +15,10 @@
         <section class="about__us about-us">
           <div class="about-us__container">
             <div class="about-us__content">
-              <div class="line1">
-                <picture>
-                  <source
-                    media="(max-width: 670px)"
-                    srcset="@img/frame-mobile.png"
-                  />
-                  <source srcset="@img/frame.png" />
-                  <img
-                    src="@img/frame.png"
-                    srcset="@img/frame@2x.png 2x"
-                    alt=""
-                  />
-                </picture>
+              <img class="frame" src="@img/frame.svg" alt="" />
+
+              <div class="line1 line">
+                <img src="@img/frame-mobile.svg" alt="" />
               </div>
               <div class="about-us__body">
                 <div class="about-us__content">
@@ -39,22 +30,11 @@
                   </h3>
                 </div>
                 <div class="about-us__btn button">
-                  <a href="#" class="btn">заказать</a>
+                  <a href="servies.html" class="btn">услуги</a>
                 </div>
               </div>
-              <div class="line2">
-                <picture>
-                  <source
-                    media="(max-width: 670px)"
-                    srcset="@img/frame-mobile.png"
-                  />
-                  <source srcset="@img/frame.png" />
-                  <img
-                    src="@img/frame.png"
-                    srcset="@img/frame@2x.png 2x"
-                    alt=""
-                  />
-                </picture>
+              <div class="line2 line">
+                <img src="@img/frame-mobile.svg" alt="" />
               </div>
             </div>
           </div>
@@ -62,24 +42,30 @@
         <section class="project__our our-project">
           <div class="our-project__container">
             <div class="our-project__body">
-              <div class="our-project__item item-project">
-                <img
-                  src="@img/project/unity-arena.png"
-                  srcset="@img/project/unity-arena-2x.png 2x"
-                  alt=""
-                />
+              <a href="./chaplygin.html" class="our-project__item item-project">
+                <div class="item-project__image-ibg">
+                  <img
+                    src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
+                    data-src="@img/project/unity-arena.png"
+                    data-srcset="@img/project/unity-arena-2x.png 2x"
+                    alt=""
+                  />
+                </div>
 
                 <div class="item-project__info">
                   <span>лого / брендинг</span>
                   <p>Unity Arena</p>
                 </div>
-              </div>
+              </a>
               <div class="our-project__item item-project">
-                <img
-                  src="@img/project/fud-park.png"
-                  srcset="@img/project/fud-park-2x.png 2x"
-                  alt=""
-                />
+                <div class="item-project__image-ibg">
+                  <img
+                    src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
+                    data-src="@img/project/fud-park.png"
+                    data-srcset="@img/project/fud-park-2x.png 2x"
+                    alt=""
+                  />
+                </div>
 
                 <div class="item-project__info">
                   <span>лого / брендинг</span>
@@ -87,67 +73,83 @@
                 </div>
               </div>
               <div class="our-project__item item-project">
-                <img
-                  src="@img/project/tab-tab.png"
-                  srcset="@img/project/tab-tab-2x.png 2x"
-                  alt=""
-                />
+                <div class="item-project__image-ibg">
+                  <img
+                    src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
+                    data-src="@img/project/tab-tab.png"
+                    data-srcset="@img/project/tab-tab-2x.png 2x"
+                    alt=""
+                  />
+                </div>
 
                 <div class="item-project__info">
                   <span>лого / брендинг</span>
                   <p>ТАБ-ТАБ</p>
                 </div>
               </div>
-              <div class="our-project__item item-project">
-                <img
-                  src="@img/project/mosfulfilment.png"
-                  srcset="@img/project/mosfulfilment-2x.png 2x"
-                  alt=""
-                />
+              <a href="./mosful.html" class="our-project__item item-project">
+                <div class="item-project__image-ibg">
+                  <img
+                    src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
+                    data-src="@img/project/mosfulfilment.png"
+                    data-srcset="@img/project/mosfulfilment-2x.png 2x"
+                    alt=""
+                  />
+                </div>
 
                 <div class="item-project__info">
                   <span>лого / брендинг / веб</span>
                   <p>MosFulfilment</p>
                 </div>
-              </div>
-              <div class="our-project__item item-project">
-                <img
-                  src="@img/project/kus.png"
-                  srcset="@img/project/kus-2x.png 2x"
-                  alt=""
-                />
+              </a>
+              <a href="./kus.html" class="our-project__item item-project">
+                <div class="item-project__image-ibg">
+                  <img
+                    src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
+                    data-src="@img/project/kus.png"
+                    data-srcset="@img/project/kus-2x.png 2x"
+                    alt=""
+                  />
+                </div>
 
                 <div class="item-project__info">
                   <span>лого</span>
                   <p>КУСЬ</p>
                 </div>
-              </div>
+              </a>
               <div class="our-project__item item-project">
-                <img
-                  src="@img/project/orbita.png"
-                  srcset="@img/project/orbita-2x.png 2x"
-                  alt=""
-                />
+                <div class="item-project__image-ibg">
+                  <img
+                    src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
+                    data-src="@img/project/orbita.png"
+                    data-srcset="@img/project/orbita-2x.png 2x"
+                    alt=""
+                  />
+                </div>
 
                 <div class="item-project__info">
                   <span>лого / брендинг</span>
                   <p>ORBITA DETAILING</p>
                 </div>
               </div>
-              <div class="our-project__item item-project">
-                <img
-                  src="@img/project/toolbox.png"
-                  srcset="@img/project/toolbox-2x.png 2x"
-                  alt=""
-                />
+              <a href="./toolbox.html" class="our-project__item item-project">
+                <div class="item-project__image-ibg">
+                  <img
+                    src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
+                    data-src="@img/project/toolbox.png"
+                    data-srcset="@img/project/toolbox-2x.png 2x"
+                    alt=""
+                  />
+                </div>
 
                 <div class="item-project__info">
                   <span>лого / брендинг / it-разработка</span>
                   <p>TOOLBOX</p>
                 </div>
-              </div>
-              <div class="our-project__item item-project">
-                <a
+              </a>
+              <a href="./medsupp.html" class="our-project__item item-project">
+                <button
+                  src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
                   href="https://www.designrush.com/best-designs"
                   target="_blank"
                   class="best-design"
@@ -159,52 +161,74 @@
                       медицинского брендинга»
                     </p>
                   </div>
-                </a>
-                <img
-                  src="@img/project/medsapp.png"
-                  srcset="@img/project/medsapp-2x.png 2x"
-                  alt=""
-                />
+                </button>
+
+                <div class="item-project__image-ibg">
+                  <img
+                    src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
+                    data-src="@img/project/medsapp.png"
+                    data-srcset="@img/project/medsapp-2x.png 2x"
+                    alt=""
+                  />
+                </div>
 
                 <div class="item-project__info">
                   <span>лого / брендинг / it-разработка</span>
                   <p>MEDSAPP</p>
                 </div>
-              </div>
-              <div class="our-project__item item-project">
-                <img
-                  src="@img/project/asta.png"
-                  srcset="@img/project/asta-2x.png 2x"
-                  alt=""
-                />
+              </a>
+              <a href="./asta.html" class="our-project__item item-project">
+                <div class="item-project__image-ibg">
+                  <img
+                    src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
+                    data-src="@img/project/asta.png"
+                    data-srcset="@img/project/asta-2x.png 2x"
+                    alt=""
+                  />
+                </div>
 
                 <div class="item-project__info">
                   <span>лого / брендинг</span>
                   <p>ASTA</p>
                 </div>
-              </div>
+              </a>
               <div class="our-project__item item-project">
-                <img src="@img/project/indip.svg" alt="" />
+                <div class="item-project__image-ibg">
+                  <img
+                    src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
+                    data-src="@img/project/indip.svg"
+                    alt=""
+                  />
+                </div>
 
                 <div class="item-project__info">
                   <span>лого / брендинг / it-разработка</span>
                   <p>INDIP</p>
                 </div>
               </div>
-              <div class="our-project__item item-project">
-                <img src="@img/project/mindal.svg" alt="" />
+              <a href="./mindal.html" class="our-project__item item-project">
+                <div class="item-project__image-ibg">
+                  <img
+                    src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
+                    data-src="@img/project/mindal.svg"
+                    alt=""
+                  />
+                </div>
 
                 <div class="item-project__info">
                   <span>лого / брендинг / веб</span>
                   <p>mindal</p>
                 </div>
-              </div>
+              </a>
               <div class="our-project__item item-project">
-                <img
-                  src="@img/project/kans.png"
-                  srcset="@img/project/kans-2x.png 2x"
-                  alt=""
-                />
+                <div class="item-project__image-ibg">
+                  <img
+                    src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
+                    data-src="@img/project/kans.png"
+                    data-srcset="@img/project/kans-2x.png 2x"
+                    alt=""
+                  />
+                </div>
 
                 <div class="item-project__info">
                   <span>лого / брендинг </span>

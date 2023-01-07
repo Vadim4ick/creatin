@@ -100,53 +100,14 @@
                     </picture>
                   </div>
 
-                  <div class="product-about__img">
-                    <img src="@img/about/loop.svg" alt="" />
-                  </div>
-                  <div class="product-about__content">
-                    <span>1</span>
-                    <p>Изучаем продукт и целевые группы</p>
-                  </div>
-                </div>
-                <div class="product-about__item">
-                  <div class="product-about__image">
-                    <picture>
-                      <source
-                        media="(max-width: 768px)"
-                        srcset="@img/about/mobile-frame.svg"
-                      />
-                      <source srcset="@img/about/frame.svg" />
-                      <img src="@img/about/frame.svg" alt="" />
-                    </picture>
-                  </div>
-                  <div class="product-about__img">
-                    <img src="@img/about/ball.svg" alt="" />
-                  </div>
-                  <div class="product-about__content">
-                    <span>2</span>
-                    <p>
-                      Анализируем <br />
-                      рынок
-                    </p>
-                  </div>
-                </div>
-                <div class="product-about__item">
-                  <div class="product-about__image">
-                    <picture>
-                      <source
-                        media="(max-width: 768px)"
-                        srcset="@img/about/mobile-frame.svg"
-                      />
-                      <source srcset="@img/about/frame.svg" />
-                      <img src="@img/about/frame.svg" alt="" />
-                    </picture>
-                  </div>
-                  <div class="product-about__img">
-                    <img src="@img/about/pencil.svg" alt="" />
-                  </div>
-                  <div class="product-about__content">
-                    <span>3</span>
-                    <p>Создаем подходящую концепцию</p>
+                  <div class="product-about__body">
+                    <div class="product-about__img">
+                      <img src="@img/about/loop.svg" alt="" />
+                    </div>
+                    <div class="product-about__content">
+                      <span>1</span>
+                      <p>Изучаем продукт и целевые группы</p>
+                    </div>
                   </div>
                 </div>
                 <div class="product-about__item">
@@ -161,12 +122,61 @@
                     </picture>
                   </div>
 
-                  <div class="product-about__img">
-                    <img src="@img/about/like.svg" alt="" />
+                  <div class="product-about__body">
+                    <div class="product-about__img">
+                      <img src="@img/about/ball.svg" alt="" />
+                    </div>
+                    <div class="product-about__content">
+                      <span>2</span>
+                      <p>
+                        Анализируем <br />
+                        рынок
+                      </p>
+                    </div>
                   </div>
-                  <div class="product-about__content">
-                    <span>4</span>
-                    <p>Получаем эфективный результат</p>
+                </div>
+                <div class="product-about__item">
+                  <div class="product-about__image">
+                    <picture>
+                      <source
+                        media="(max-width: 768px)"
+                        srcset="@img/about/mobile-frame.svg"
+                      />
+                      <source srcset="@img/about/frame.svg" />
+                      <img src="@img/about/frame.svg" alt="" />
+                    </picture>
+                  </div>
+
+                  <div class="product-about__body">
+                    <div class="product-about__img">
+                      <img src="@img/about/pencil.svg" alt="" />
+                    </div>
+                    <div class="product-about__content">
+                      <span>3</span>
+                      <p>Создаем подходящую концепцию</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-about__item">
+                  <div class="product-about__image">
+                    <picture>
+                      <source
+                        media="(max-width: 768px)"
+                        srcset="@img/about/mobile-frame.svg"
+                      />
+                      <source srcset="@img/about/frame.svg" />
+                      <img src="@img/about/frame.svg" alt="" />
+                    </picture>
+                  </div>
+
+                  <div class="product-about__body">
+                    <div class="product-about__img">
+                      <img src="@img/about/like.svg" alt="" />
+                    </div>
+                    <div class="product-about__content">
+                      <span>4</span>
+                      <p>Получаем эфективный результат</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -182,14 +192,14 @@
                   вопросам.
                 </p>
                 <div class="about-us__btn button">
-                  <a href="#!" class="btn">оставить заявку</a>
+                  <a href="contacts.html" class="btn">оставить заявку</a>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <section class="our-works about">
-          <div class="our-works__wrapper">
+          <div class="about our-works__wrapper">
             <div class="our-works__body about">
               <div class="our-works__title">
                 <p>наши работы</p>
@@ -208,11 +218,14 @@
                 <div class="our-works__swiper">
                   <div class="our-works__slide">
                     <div class="our-project__item item-project">
-                      <img
-                        src="@img/project/buklik.png"
-                        srcset="@img/project/buklik-2x.png 2x"
-                        alt=""
-                      />
+                      <div class="item-project__image-ibg">
+                        <img
+                          src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
+                          data-src="@img/project/buklik.png"
+                          data-srcset="@img/project/buklik-2x.png 2x"
+                          alt=""
+                        />
+                      </div>
 
                       <div class="item-project__info">
                         <span>лого / брендинг</span>
@@ -222,11 +235,14 @@
                   </div>
                   <div class="our-works__slide">
                     <div class="our-project__item item-project">
-                      <img
-                        src="@img/project/marry.png"
-                        srcset="@img/project/marry-2x.png 2x"
-                        alt=""
-                      />
+                      <div class="item-project__image-ibg">
+                        <img
+                          src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
+                          data-src="@img/project/marry.png"
+                          data-srcset="@img/project/marry-2x.png 2x"
+                          alt=""
+                        />
+                      </div>
 
                       <div class="item-project__info">
                         <span>лого / брендинг</span>
@@ -249,11 +265,15 @@
                           </p>
                         </div>
                       </a>
-                      <img
-                        src="@img/project/medsapp.png"
-                        srcset="@img/project/medsapp-2x.png 2x"
-                        alt=""
-                      />
+
+                      <div class="item-project__image-ibg">
+                        <img
+                          src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
+                          data-src="@img/project/medsapp.png"
+                          data-srcset="@img/project/medsapp-2x.png 2x"
+                          alt=""
+                        />
+                      </div>
 
                       <div class="item-project__info">
                         <span>лого / брендинг / it-разработка</span>
@@ -263,11 +283,14 @@
                   </div>
                   <div class="our-works__slide">
                     <div class="our-project__item item-project">
-                      <img
-                        src="@img/project/kus.png"
-                        srcset="@img/project/kus-2x.png 2x"
-                        alt=""
-                      />
+                      <div class="item-project__image-ibg">
+                        <img
+                          src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
+                          data-src="@img/project/kus.png"
+                          data-srcset="@img/project/kus-2x.png 2x"
+                          alt=""
+                        />
+                      </div>
 
                       <div class="item-project__info">
                         <span>лого</span>
@@ -277,11 +300,14 @@
                   </div>
                   <div class="our-works__slide">
                     <div class="our-project__item item-project">
-                      <img
-                        src="@img/project/orbita.png"
-                        srcset="@img/project/orbita-2x.png 2x"
-                        alt=""
-                      />
+                      <div class="item-project__image-ibg">
+                        <img
+                          src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
+                          data-src="@img/project/orbita.png"
+                          data-srcset="@img/project/orbita-2x.png 2x"
+                          alt=""
+                        />
+                      </div>
 
                       <div class="item-project__info">
                         <span>лого / брендинг</span>
@@ -291,11 +317,14 @@
                   </div>
                   <div class="our-works__slide">
                     <div class="our-project__item item-project">
-                      <img
-                        src="@img/project/fud-park.png"
-                        srcset="@img/project/fud-park-2x.png 2x"
-                        alt=""
-                      />
+                      <div class="item-project__image-ibg">
+                        <img
+                          src="data:image/gif;base64,R0lGODlhkAGQAYAAAP///wAAACH5BAEAAAEALAAAAACQAZABAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8b+jRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1axbu34NO7bs2bRr276NO7fu3bx7+/4NPLjw4cSLGz+OPLny5cybO38OPbr06dSrW7+OPbv27dy7e/8OPrz48eTLmz+PPr369ezbu38PP778+fTr27+PP7/+/fxP+/v/D2CAAg5IYIEGHohgggouyGCDDj4IYYQSTkhhhRZeiGGGGm7IYYcefghiiCKOSGKJJp6IYooqrshiiy6+CGOMMs5IY4023ohjjm0UAAA7"
+                          data-src="@img/project/fud-park.png"
+                          data-srcset="@img/project/fud-park-2x.png 2x"
+                          alt=""
+                        />
+                      </div>
 
                       <div class="item-project__info">
                         <span>лого / брендинг</span>

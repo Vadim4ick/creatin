@@ -24,6 +24,12 @@
   &__body {
     position: relative;
 
+    @media (max-width: em(500)) {
+      display: table;
+      margin-left: auto;
+      margin-right: 20px;
+    }
+
     img {
       max-width: 100%;
     }
@@ -252,9 +258,16 @@
       position: relative;
       align-items: center;
       justify-content: center;
-      background-color: #fff;
+      background-color: #060606;
       border-radius: 50%;
       z-index: 5;
+      transition: all 0.3s ease 0s;
+
+      @media (any-hover: hover) {
+        &:hover {
+          background-color: #fff;
+        }
+      }
 
       @media (max-width: $mobile) {
         width: 36px;
@@ -277,8 +290,9 @@
   padding-bottom: rem(110);
 
   &__wrapper {
-    max-width: rem(1240);
-    margin-left: auto;
+    max-width: rem(1030);
+    // margin-left: auto;
+    margin: 0 auto;
     @media (max-width: $pc) {
       padding: 0 rem(25);
     }

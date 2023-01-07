@@ -33,31 +33,14 @@
   &__content {
     position: relative;
 
-    .line1 {
-      position: absolute;
-      top: -90px;
-      left: 0;
-      img {
-        max-width: 100%;
+    img {
+      @media (min-width: $mobile) {
+        position: absolute;
+        top: 0;
+        left: 0;
       }
-      @media (max-width: (550px)) {
-        top: -45px;
-      }
-    }
-
-    .line2 {
-      position: absolute;
-      bottom: -90px;
-      left: 0;
-      transform: rotate(-180deg);
-
-      img {
-        max-width: 100%;
-      }
-
-      @media (max-width: (550px)) {
-        bottom: -45px;
-      }
+      max-width: 100%;
+      width: 100%;
     }
   }
 
@@ -65,12 +48,18 @@
     display: flex;
     position: relative;
     gap: rem(10);
-    justify-content: space-between;
-    align-items: flex-end;
     @include adaptiveValue("padding-right", 88, 20, 1920, 768);
 
-    @media (max-width: (670px)) {
+    @media (min-width: $mobile) {
+      @include adaptiveValue("height", 390, 227, 1400, 768, 2);
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @media (max-width: $mobile) {
       flex-direction: column;
+      padding: 10px 0;
+      justify-content: center;
     }
   }
 
@@ -88,21 +77,54 @@
       line-height: math.div(44, 32);
       max-width: rem(715);
     }
+
+    & .frame {
+      @media (max-width: $mobile) {
+        display: none;
+      }
+    }
+
+    & .line {
+      @media (min-width: $mobile) {
+        display: none;
+      }
+    }
+
+    & .line2 {
+      img {
+        transform: rotate(-180deg);
+      }
+    }
   }
 
   &__btn {
     position: relative;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 100px;
+    }
+
+    @media (max-width: $tablet) {
+      padding-bottom: 60px;
+    }
+
+    @media (min-width: $mobile) {
+      align-self: flex-end;
+    }
     @media (max-width: $mobile) {
-      margin-right: 10px;
+      padding-bottom: 0;
+      align-self: flex-end;
     }
 
     a {
       min-width: 116px;
       min-height: 54px;
+      color: #46b4f2;
 
       @media (max-width: $mobile) {
         min-width: 92px;
         min-height: 44px;
+        font-size: rem(13);
       }
     }
   }
@@ -145,6 +167,7 @@
 
   &__item {
     position: relative;
+    width: 100%;
 
     img {
       border-radius: 14px;
@@ -158,11 +181,6 @@
       background: rgba(6, 6, 6, 0.55);
       top: 0;
       left: 0;
-    }
-
-    @media (max-width: $mobileSmall) {
-      width: 310px;
-      height: 310px;
     }
   }
 }
@@ -256,11 +274,28 @@
   }
 
   &__inp {
+    position: relative;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   left: 0;
+    //   bottom: 0;
+    //   width: 100%;
+    //   height: 2px;
+    //   background-color: #46b4f2;
+    // }
+
+    // &._form-error {
+    //   &::before {
+    //     background-color: #9b1e1e;
+    //   }
+    // }
   }
 
   &__btn {
     position: relative;
-    color: #4695f2;
+    color: #46b4f2;
 
     @media (max-width: $mobile) {
       display: table;
@@ -334,4 +369,8 @@
       text-align: end;
     }
   }
+}
+
+.item-project__image-ibg {
+  padding-bottom: percent(400, 400);
 }

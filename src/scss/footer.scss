@@ -10,7 +10,7 @@
     min-height: rem(100);
 
     @media (max-width: $mobile) {
-      min-height: rem(60);
+      min-height: rem(95);
       // justify-content: end;
     }
   }
@@ -29,6 +29,12 @@
       @include adaptiveValue("font-size", 16, 13);
       line-height: math.div(22, 16);
       color: #46b4f2;
+    }
+
+    a {
+      @media (max-width: $mobile) {
+        @include adaptiveValue("font-size", 16, 13);
+      }
     }
   }
 

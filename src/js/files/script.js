@@ -3,6 +3,54 @@ import { isMobile } from "./functions.js";
 // Подключение списка активных модулей
 import { flsModules } from "./modules.js";
 
+const img = document.querySelector(".main-projects");
+
+if (img) {
+  if (window.matchMedia("(min-width: 500px)").matches) {
+    img.style.backgroundImage = `url(./../img/projects/${img.classList[0]}/logo.png)`;
+  } else {
+    img.style.backgroundImage = `url(./../img/projects/${img.classList[0]}/mobile-logo-2x.png)`;
+  }
+}
+
+if (document.querySelector("#header-black-scroll")) {
+  const options = {
+    rootMargin: "0px",
+    threshold: 0.05,
+  };
+
+  var callback = function (entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        document.querySelector("header").classList.add("black");
+
+        document.querySelector(".heder__logo").innerHTML = `  <picture>
+        <source
+          media="(max-width: 768px)"
+          srcset="./img/projects/logo-mobile-black.svg"
+        />
+        <source srcset="./img/projects/logo-black.svg" />
+        <img src="./img/projects/logo-black.svg" alt="" />
+      </picture>`;
+      } else {
+        document.querySelector("header").classList.remove("black");
+
+        document.querySelector(".heder__logo").innerHTML = `  <picture>
+        <source
+          media="(max-width: 768px)"
+          srcset="./img/projects/logo-mobile.svg"
+        />
+        <source srcset="./img/projects/logo.svg" />
+        <img src="./img/projects/logo.svg" alt="" />
+      </picture>`;
+      }
+    });
+  };
+  var observer = new IntersectionObserver(callback, options);
+  const target = document.querySelector(".main-projects");
+  observer.observe(target);
+}
+
 // let element = document.querySelector(".best-design");
 
 // element.addEventListener("mouseenter", createEl, true);
